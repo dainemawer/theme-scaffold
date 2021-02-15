@@ -31,6 +31,8 @@ module.exports = {
 	entry: configureEntries(),
 	output: {
 		path: path.resolve(process.cwd(), settings.paths.dist.base),
+		publicPath: settings.publicPath, // <= this line is important
+		chunkFilename: settings.chunkFilename,
 		filename: settings.filename.js,
 		/**
 		 * If multiple webpack runtimes (from different compilations) are used on the same webpage,
@@ -79,6 +81,15 @@ module.exports = {
 						options: {
 							cacheDirectory: true,
 							sourceMap: !isProduction,
+							presets: [
+								[
+									'@babel/preset-env',
+									{
+										useBuiltIns: 'usage',
+										corejs: 3,
+									},
+								],
+							],
 						},
 					},
 				],

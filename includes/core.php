@@ -104,6 +104,13 @@ function scripts() {
 function styles() {
 
 	wp_enqueue_style(
+		'bulma',
+		TENUP_SCAFFOLD_TEMPLATE_URL . '/node_modules/bulma/css/bulma.min.css',
+		[],
+		TENUP_SCAFFOLD_VERSION
+	);
+
+	wp_enqueue_style(
 		'styles',
 		TENUP_SCAFFOLD_TEMPLATE_URL . '/dist/css/style.css',
 		[],

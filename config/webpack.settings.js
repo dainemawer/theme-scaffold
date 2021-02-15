@@ -20,6 +20,8 @@ module.exports = {
 		js: 'js/[name].js',
 		css: 'css/[name].css',
 	},
+	chunkFilename: '[name].frontend.js',
+	publicPath: '/wp-content/themes/theme-scaffold/dist/',
 	paths: {
 		src: {
 			base: './assets/',
