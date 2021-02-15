@@ -187,10 +187,6 @@ We don't know everything! We welcome pull requests and spirited, but respectful,
 
 **Active:** 10up is actively working on this, and we expect to continue work for the foreseeable future including keeping tested up to the most recent version of WordPress.  Bug reports, feature requests, questions, and pull requests are welcome.
 
-## Like what you see?
-
-<a href="http://10up.com/contact/"><img src="https://10up.com/uploads/2016/10/10up-Github-Banner.png" alt="Work with 10up, we create amazing websites and tools that make content management simple and fun using open source tools and platforms"></a>
-
 ## Handling Code Splitting and Dynamic Import
 There are few important aspects to ES6 Dynamic Import that you should take note of - especially if you cant get dynamic import to work correctly.
 1. A `publicPath` is absolutely mandatory - it tells the entry file (in our case `frontend.js` where the bundles exist relative to `frontend.js` - if you land up getting 404 errors when the browser tries to access those files, its usually because your `publicPath` is incorrect.
@@ -223,3 +219,7 @@ export default Component;
 
 export default const Component = () => {}
 ```
+
+## Like what you see?
+
+<a href="http://10up.com/contact/"><img src="https://10up.com/uploads/2016/10/10up-Github-Banner.png" alt="Work with 10up, we create amazing websites and tools that make content management simple and fun using open source tools and platforms"></a>
